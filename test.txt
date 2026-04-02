@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>问题反馈</title>
+<body style="background-color:black;">
+
+<h1 style="text-align:center;font-size:30px;color:blue;">问题反馈</h1>
+<p style="color:blue;font-size:25px;">如果网站有问题，请联系：<br>QQ @Sunglsses-Max(3452378515)</p>
+
+
+</body>
