@@ -102,3 +102,44 @@ img {
         width: 100%;
     }
 }
+/* 社交图标按钮样式，和反馈页保持统一 */
+.social-box {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.social-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 8px 8px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* 平台专属配色 */
+.social-btn.bilibili {
+    background: #fb7299;
+}
+.social-btn.qq {
+    background: #12b7f5;
+}
+.social-btn.coolapk {
+    background: #3399ff;
+}
+.social-btn.github {
+    background: #222222;
+}
+.social-btn.mail {
+    background: #0078d4;
+}
+
+.social-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    opacity: 0.85;
+}
