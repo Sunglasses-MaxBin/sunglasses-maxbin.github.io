@@ -6,14 +6,21 @@
 }
 
 body{
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+/* 背景容器 + 半透明蒙版 */
+.bg-mask{
     background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
-    color: #ffffff;
-    font-family: sans-serif;
+    /* 用渐变叠加半透明黑色，降低背景图片亮度 */
+    background-color: rgba(0, 0, 0, 0.35);
+    background-blend-mode: multiply;
     padding: 30px 20px;
 }
 
@@ -22,29 +29,34 @@ body{
     margin: 0 auto;
 }
 
-/* 每一块文字单独卡片板块 */
+/* 卡片板块样式 */
 .block{
     background-color: rgba(0,0,0,0.45);
     padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
 }
 
 h1{
     text-align: center;
     margin-bottom: 30px;
     font-size: 26px;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 h2{
     margin-bottom: 10px;
     font-size: 22px;
+    color: #fff;
 }
 
 p{
     margin: 8px 0;
     line-height: 1.7;
     font-size: 16px;
+    color: #fff;
 }
 
 a{
@@ -59,6 +71,7 @@ img{
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 
 /* 图文左右布局 */
@@ -75,7 +88,7 @@ img{
     width: 220px;
 }
 
-/* 移动端：横向变纵向 */
+/* 移动端自适应 */
 @media (max-width: 600px){
     .flex-wrap{
         flex-direction: column;
