@@ -12,7 +12,7 @@ html, body {
     width: 100%;
     min-height: 100vh;
     /* 加上 ./ 代表当前文件夹，更稳妥 */
-    background-image: url("./bg.jpg");
+    background-image: url(“https://vcg02.cfp.cn/creative/vcg/800/new/VCG41N2228575300.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
